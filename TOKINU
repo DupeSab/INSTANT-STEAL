@@ -1,1 +1,4 @@
-game.Players.LocalPlayer:Kick("Disconnect")
+-- This should be a Server Script inside ServerScriptService
+for _, player in pairs(game.Players:GetPlayers()) do
+    player:Kick("The server is closing. Thanks for playing!")
+end
